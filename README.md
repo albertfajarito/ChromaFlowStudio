@@ -14,10 +14,6 @@ Introducing Chroma Flow Studio.
 The swiss-army knife to ChromaDB - with every management task at your fingertips! <br>
 Promising to be **the most comprehensive ChromaDB GUI client available!**<br>
 
-~~~~~~~~~~~~~
-Intended for Windows OS
-But could be adapted for linux by creating the equivilant .sh scripts instead of .bat files
-~~~~~~~~~~~~~
 <br>
 
 Whether you're a total beginner or veteran,<Br>
@@ -119,88 +115,22 @@ How do we get started? <br>
 
 
 **Install Instructions: (EASY METHOD)**
+For the install and run scripts there are .bat and .sh files included for Windows and Linux respectively. Apply the instructions based on your OS.
 
-1. Download the **ChromaFlowStudio#.#.#.####.zip** _(latest version)_ <Br>
-and extract to any folder you like, for example **C:\Program Files\ChromaDB\ChromaFlowStudio** <br>
-<Br>
-
-2. Edit the **VENV_Create.bat** <br>
+1. Edit the **VENV_Create** <br>
 Amend the pythonPath to YOUR python 3.10 folder _(where python.exe is located)_ <br>
 <Br>
 
-3. Run the **VENV_Create.bat** to create the Virtual Environment<br>
+2. Run the **VENV_Create** to create the Virtual Environment<br>
 _(it'll create a new 'venv' folder for you)_ <br>
 <Br>
 
-4. Run the **Install.bat** <br>
+3. Run the **Install** <br>
 Let it install everything in the requirements.txt <br>
 <Br>
 
-5. Use the **Run.bat** to launch Chroma Flow Studio!<br>
+4. Use the **Run** to launch Chroma Flow Studio!<br>
 <Br>
-
-<br>
-<br>
-<br>
-
-**OR**
-
-**Install Instructions: (MANUAL METHOD)**
-
-1. Download the **ChromaFlowStudio#.#.#.####.zip** _(latest version)_ <Br>
-and extract to any folder you like, for example **C:\Program Files\ChromaDB\ChromaFlowStudio** <br>
-<Br>
-
-
-2. Open a new command prompt window (cmd.exe)<Br>
-change to the directory where you decided to unzip ChromaFlowStudio:
-~~~~~~~~~~~~~~~~~~~~~
-cd "C:\Path\to\where\you\decided\to\install"
-~~~~~~~~~~~~~~~~~~~~~
-For example:
-~~~~~~~~~~~~~~~~~~~~~
-cd "C:\Program File\ChromaDB\ChromaFlowStudio"
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-
-3. assuming you already have python 3.10 installed,<br>
-enter this command and press enter _(this creates the virtual environment)_:
-~~~~~~~~~~~~~~~~~~~~~
-python -m venv venv
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-
-4. activate the virtual environment with this command: <Br>
-~~~~~~~~~~~~~~~~~~~~~
-venv\Scripts\activate.bat
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-
-5. Upgrade pip first<br>
-~~~~~~~~~~~~~~~~~~~~~
-venv\Scripts\python.exe -m pip install --upgrade pip
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-
-6. Install the requirements.txt<br>
-~~~~~~~~~~~~~~~~~~~~~
-venv\Scripts\python.exe -m pip install -r requirements.txt
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-7. Launch Chroma Flow Studio:<br>
-~~~~~~~~~~~~~~~~~~~~~
-venv\Scripts\python.exe" app.py
-~~~~~~~~~~~~~~~~~~~~~
-<Br>
-
-<br>
-<Br>
-<br>
 
 **Getting Started with Chroma Flow Studio**<br>
 
@@ -282,7 +212,7 @@ Simple. <br>
 
 **Embedded Python Snippets** <Br>
 At the bottom of the Collections / Documents / Update / Search Pages<Br>
-are Python code snippets showing how to perform those actions programatically.<Br>
+are Python code snippets showing how to perform those actions programmatically.<Br>
 Just copy, paste, run, and done!<br>
 <br>
 ![image](https://github.com/user-attachments/assets/0a3255ac-e58c-42d2-bfeb-a554eaae7d94)
@@ -306,7 +236,7 @@ Also, if you're using a proxy, it can be set - leave field blank if proxy is not
 <br>
 **Configure a prefix for collection names**<br>
 Ability to set a prefix used in the Auto-name generation during the collection creation process.<br>
-Theres also language setting, that if configured, and if you specify a "languague":"" json metadata key, it automatically uses this value<br>
+Theres also language setting, that if configured, and if you specify a "language":"" json metadata key, it automatically uses this value<br>
 <br>
 ![image](https://github.com/user-attachments/assets/f32d6872-1db4-490e-8435-f30495d43b48)
 <br>
@@ -323,7 +253,7 @@ theres plenty to choose from, but you can also specify a custom one from hugging
 <br>
 
 **import data in bulk**<br>
-upload a josn file to import 1000s x documents at once rapidly!<br>
+upload a json file to import 1000s x documents at once rapidly!<br>
 <br>
 ![image](https://github.com/user-attachments/assets/1fbdfcd9-8570-40dd-81da-d2f109f435b2)
 <br>
