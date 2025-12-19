@@ -591,12 +591,17 @@ def get_chromadb_app_version():
     """Fetches the ChromaDB app version"""
     try:
         # Get the path to the venv's pip
-        venv_pip = os.path.join(os.getcwd(), "venv", "bin", "pip")
-        pip_cmd = venv_pip if os.path.exists(venv_pip) else "pip"
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        venv_python = os.path.join(BASE_DIR, "venv", "bin", "python")
+
+        python_cmd = venv_python if os.path.exists(venv_python) else "python"
 
         # Run the command and capture the output
         result = subprocess.run(
-            [pip_cmd, "show", "chromadb"], capture_output=True, text=True, check=True
+            [python_cmd, "-m", "pip", "show", "chromadb"],
+            capture_output=True,
+            text=True,
+            check=True
         )
 
         # Filter the output for the version line using 'findstr'

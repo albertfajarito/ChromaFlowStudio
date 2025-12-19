@@ -287,7 +287,7 @@ A Python client for quickly viewing documents in your collections. Can run basic
 **Chromagraphic** <br>
 https://github.com/msteele3/chromagraphic <BR>
 A Python client for quickly viewing documents in your collections. Can add documents, but not search them. <Br>
-<br>
+/<br>
 
 **Vector Admin** <Br>
 https://github.com/Mintplex-Labs/vector-admin <br>
